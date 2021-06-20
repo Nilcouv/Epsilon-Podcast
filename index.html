@@ -9,8 +9,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Podcast et vidéo de philosophie | Epsilon</title>
         <meta name="description" content="Changez de perspectives sur le monde grâce à la philosophie. Accompagnez nous dans notre quête.">
+        <meta name="keywords" content="philosophie, podcast, vidéo">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
         <header class="topbar">
@@ -47,11 +49,38 @@
             <hr>
             <button title="plus"></button>
         </h2>
+        <div>
+            <h3 class="">Titre de l'épisode</h3>
+            <p> description de l'épisode</p>
+            <div>
+                <button>play</button>
+                <div>
+                    compteur de vues
+                    durée d'écoute
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Ajoutez nous sur :</p>
+            <ul>
+                <li>youtube</li>
+                <li>Spotify</li>
+                <li>Apple podcast</li>
+            </ul>
+        </div>
         <p class="">Galeries reprenants les vidéos les plus vues</p>
-        <h2>Actualités</h2>
-        <p class="">Les dernières nouvelles de la chaines</p>
+        <h2>
+            Actualités
+            <hr>
+            <button title="plus"></button>
+        </h2>
+        <div>
+            <h3>titre de l'actualité</h3>
+            <p>durée de lecture </p>
+        </div>
         <footer>
             <div class="socials">
+                <p>Suivez-nous sur</p>
                 <ul>
                     <li><a href="youtube"><img src="img/youtube.png" alt=""></a></li>
                     <li><a href="tiktok"><img src="img/tiktok.png" alt=""></a></li>
@@ -60,9 +89,21 @@
                     <li><a href="twitter"><img src="img/TwitterActive.svg" alt=""></a></li>
                 </ul>
             </div>
-            <div class="newsletter"></div>
-            <div class="contact"></div>
-            <p class="copyright">tous droits réservés à Epsilon &copy; 2021 - 2021</p>
+            <form action="index.html">
+                <fieldset>
+                    <title>Newsletter</title>
+                    <input type="email" name="emailNewsletter" inputmode="email" placeholder="Entrez votre email" required>
+                    <input type="submit" value="s'inscrire">
+                </fieldset>
+            </form>   
+            <form action="mailto:youraddr@domain.tld" method="GET">
+                <fieldset>
+                    <title>Contactez-nous</title>
+                    <button>contact@epsilon.com</button>
+                </fieldset>                
+            </form>
+            <p class="copyright">tous droits réservés à Epsilon &copy; 2021 - 2021 | </p>
+            <a href="confidentialite.html">Confidentialité</a>
         </footer>
     </body>
 </html> 
