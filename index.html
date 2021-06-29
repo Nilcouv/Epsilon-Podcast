@@ -1,7 +1,3 @@
-<!-- TODO:
-() navigation mobile
- -->
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -9,14 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Podcast et vidéo de philosophie | Epsilon</title>
         <meta name="description" content="Changez de perspectives sur le monde grâce à la philosophie. Accompagnez nous dans notre quête.">
-        <meta name="keywords" content="philosophie, podcast, vidéo">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    </head>
+    </head>    
     <body>
-        <header class="topbar">
+        <!---------------- navigation bar ------------------>
+        <header>
+            <!-- logo -->
             <a href="index.html" class="logo" title="Epsilon">Epsilon</a>
+            <!-- naviggation menu -->
             <nav>
                 <ul id="main-nav">
                     <li><a href="index.html" title="Accueil">Accueil</a></li>
@@ -26,7 +23,8 @@
                     <li><a href="contact.html" title="Contact">Contact</a></li>
                 </ul>                
             </nav>
-            <div>
+            <!-- dark theme switch -->
+            <section>
                 <div>
                     <label class="switch">
                         <input type="checkbox">
@@ -34,53 +32,35 @@
                     </label>
                     <img src="img/MoonActive.svg" alt="Icone de theme sombre">
                 </div>
-                <a href="signin.html"><img src="img/ProfilActive.svg" title="Profil" alt="Icône de profil"></a>
-                <img src="img/ProfilActive.svg" title="Profil" alt="Icône de profil">
+            </section>
+            <!-- signin/up button -->
+            <a href="signin.html"><img src="img/ProfilActive.svg" title="Profil" alt="Icône de profil"></a>
         </header>
-        <div class="hero">
+        <!---------------- Hero Section ------------------>
+        <section class="hero-section">
             <h1>Questionnez le monde</h1>
             <p class="slogan">grâce à nos podcasts et de nos vidéos de philosophie</p>
             <img src="img/HeroBanner.png" alt="personne de profil écoutant un podcast dans ses écouteurs">
             <div class="socialProof"></div>   
-        </div>             
-        <hr>
-        <h2>
-            Découvrez
-            <hr>
-            <button title="plus"></button>
-        </h2>
-        <div>
-            <h3 class="">Titre de l'épisode</h3>
-            <p> description de l'épisode</p>
-            <div>
-                <button>play</button>
-                <div>
-                    compteur de vues
-                    durée d'écoute
-                </div>
-            </div>
-        </div>
-        <div>
-            <p>Ajoutez nous sur :</p>
-            <ul>
-                <li>youtube</li>
-                <li>Spotify</li>
-                <li>Apple podcast</li>
-            </ul>
-        </div>
-        <p class="">Galeries reprenants les vidéos les plus vues</p>
-        <h2>
-            Actualités
-            <hr>
-            <button title="plus"></button>
-        </h2>
-        <div>
-            <h3>titre de l'actualité</h3>
-            <p>durée de lecture </p>
-        </div>
+        </section>             
+        <!---------------- Episodes Section ------------------>
+        <section class="episodes-carousel">
+            <h2>
+                Découvrez
+                <hr>
+                <button title="plus"></button>
+            </h2>
+            <p class="">Galeries reprenants les vidéos les plus vues</p>
+        </section>        
+        <!---------------- News Section ------------------>
+        <section>
+            <h2>Actualités</h2>
+            <p class="">Les dernières nouvelles de la chaines</p>
+        </section>
+        <!---------------- Footer ------------------>
         <footer>
-            <div class="socials">
-                <p>Suivez-nous sur</p>
+            <section class="socials">
+                <h3>Suivez-nous sur</h3>
                 <ul>
                     <li><a href="youtube"><img src="img/youtube.png" alt=""></a></li>
                     <li><a href="tiktok"><img src="img/tiktok.png" alt=""></a></li>
@@ -88,22 +68,14 @@
                     <li><a href="facebook"><img src="img/FacebookActive.svg" alt=""></a></li>
                     <li><a href="twitter"><img src="img/TwitterActive.svg" alt=""></a></li>
                 </ul>
-            </div>
-            <form action="index.html">
-                <fieldset>
-                    <title>Newsletter</title>
-                    <input type="email" name="emailNewsletter" inputmode="email" placeholder="Entrez votre email" required>
-                    <input type="submit" value="s'inscrire">
-                </fieldset>
-            </form>   
-            <form action="mailto:youraddr@domain.tld" method="GET">
-                <fieldset>
-                    <title>Contactez-nous</title>
-                    <button>contact@epsilon.com</button>
-                </fieldset>                
-            </form>
-            <p class="copyright">tous droits réservés à Epsilon &copy; 2021 - 2021 | </p>
-            <a href="confidentialite.html">Confidentialité</a>
+            </section>
+            <section class="newsletter">
+                <h3>Newsletter</h3>
+            </section>
+            <section class="contact">
+                <h3>Contactez-nous</h3>
+            </section>
+            <p class="copyright">tous droits réservés à Epsilon &copy; 2021 - 2021</p>
         </footer>
     </body>
 </html> 
