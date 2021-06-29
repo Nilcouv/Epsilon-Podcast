@@ -5,17 +5,18 @@
   box-sizing: border-box;
   /* Text layout */
   font-size: 62.5%;
+  color: #e5e5e5;
+  font-family: "Barlow", sans-serif;
 }
 
 body {
   font-size: 16px;
   line-height: 1.25rem;
-  color: rgba(229, 229, 229, 1);
-  font-family: "Barlow", sans-serif;
   background: #2c2a8e;
 }
 
-.topbar {
+/************ Navbar section************/
+header {
   position: fixed;
   background: rgb(75, 74, 160);
   background: linear-gradient(
@@ -26,21 +27,8 @@ body {
   );
 }
 
-.topbar nav {
-  float: left;
-}
-
-.topbar .menus {
-  float: right;
-}
-
-button {
-  padding: 2rem 4rem;
-  background-color: coral;
-  border: 0.1rem solid chocolate;
-}
 /* Le logo*/
-.logo {
+header .logo {
   position: relative;
   display: inline-block;
   font-family: "Bellota Text", sans-serif;
@@ -49,6 +37,16 @@ button {
   font-size: 1.25rem;
   line-height: 1.25rem;
   letter-spacing: 0.02rem;
+}
+
+header nav {
+  float: right;
+}
+
+button {
+  padding: 2rem 4rem;
+  background-color: coral;
+  border: 0.1rem solid chocolate;
 }
 
 /* The switch - the box around the slider */
