@@ -1,30 +1,72 @@
+/************ basic parameters ************/
+html {
+  /* define 1rem = 10px */
+  font-size: 62.5%;
+}
+
 * {
   /* boxing layout */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* Text layout */
-  font-size: 62.5%;
   color: #e5e5e5;
+  font: 1.6rem;
+  line-height: 2rem;
   font-family: "Barlow", sans-serif;
 }
 
 body {
-  font-size: 16px;
-  line-height: 1.25rem;
+  width: 65rem;
   background: #2c2a8e;
 }
 
-/************ Navbar section************/
+h1 {
+  color: #e84855;
+  font: 4.4rem;
+  font-weight: bold;
+  line-height: 4rem;
+  letter-spacing: 4%;
+}
+
+h2 {
+  color: #e84855;
+  font: 4.4rem;
+  font-weight: bold;
+  line-height: 4rem;
+  letter-spacing: 4%;
+}
+
+h3 {
+  color: #e84855;
+  font: 2rem;
+  font-weight: medium;
+  line-height: 2.4rem;
+  letter-spacing: 6%;
+}
+
+button {
+  padding: 0.4rem 1.2rem;
+  background: none;
+  border: 0.16rem solid #9389bd;
+  border-radius: 3.2rem;
+  color: #9389bd;
+}
+
+/************ Navbar section ************/
 header {
   position: fixed;
-  background: rgb(75, 74, 160);
+  width: 100%;
   background: linear-gradient(
     0deg,
     rgba(75, 74, 160, 0.75) 0%,
     rgba(75, 74, 160, 0.75) 90%,
     rgba(229, 229, 229, 0.02) 100%
   );
+  display: inline-block;
+  /* Text Layout */
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 /* Le logo*/
@@ -34,27 +76,24 @@ header .logo {
   font-family: "Bellota Text", sans-serif;
   font-weight: bold;
   color: rgb(232, 72, 85);
-  font-size: 1.25rem;
-  line-height: 1.25rem;
-  letter-spacing: 0.02rem;
+  font-size: 2.4rem;
+  line-height: 2rem;
+  letter-spacing: 2%;
 }
 
 header nav {
   float: right;
+  display: inline-block;
 }
 
-button {
-  padding: 2rem 4rem;
-  background-color: coral;
-  border: 0.1rem solid chocolate;
-}
-
+/************ basic UI element ************/
+/*** switch button ***/
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 3.6rem;
+  height: 2rem;
 }
 
 /* Hide default HTML checkbox */
@@ -72,7 +111,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #9389bd;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -80,32 +119,32 @@ button {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
+  height: 1.6rem;
+  width: 1.6rem;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  background-color: #e5e5e5;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #52e8a9;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #52e8a9;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(2.6rem);
+  -ms-transform: translateX(2.6rem);
+  transform: translateX(2.6rem);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 3.2rem;
 }
 
 .slider.round:before {
