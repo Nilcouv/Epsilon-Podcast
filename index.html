@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <!-- font -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellota+Text&display=swap" rel="stylesheet">
+        <!-- Meta -->
         <title>Podcast et vidéo de philosophie | Epsilon</title>
         <meta name="description" content="Changez de perspectives sur le monde grâce à la philosophie. Accompagnez nous dans notre quête.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- style -->
         <link rel="stylesheet" href="style.css">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>    
     <body>
         <!---------------- navigation bar ------------------>
         <header>
-            <!-- logo -->
-            <a href="index.html" class="logo" title="Epsilon">Epsilon</a>
-            <!-- naviggation menu -->
-            <nav>
-                <ul id="main-nav">
-                    <li><a href="index.html" title="Accueil">Accueil</a></li>
-                    <li><a href="formats.html" title="Formats">Formats</a></li>
-                    <li><a href="contributeurs.html" title="Contributeurs">Contributeurs</a></li>
-                    <li><a href="apropos.html" title="A propos">A Propos</a></li>
-                    <li><a href="contact.html" title="Contact">Contact</a></li>
-                </ul>                
-            </nav>
-            <!-- dark theme switch -->
-            <div>
-                <div>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                    <img src="img/MoonActive.svg" alt="Icone de theme sombre">
-                </div>            
-            <!-- signin/up button -->
-                <a href="signin.html"><img src="img/ProfilActive.svg" title="Profil" alt="Icône de profil"></a>
-            </div>
+            <div class=header-container>
+                <!-- logo -->
+                <a class="header-logo" href="index.html" title="epsilon">epsilon</a>
+                <!-- naviggation menu -->
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="episodes.html" title="épisodes">épisodes</a></li>
+                        <li><a href="actualite.html" title="actualité">actualité</a></li>
+                        <li><a href="apropos.html" title="à propos">à propos</a></li>
+                        <li><a href="contributeurs.html" title="contributeurs">contributeurs</a></li>
+                        <li><a href="contact.html" title="contact">contact</a></li>
+                    </ul>                
+                </nav>
+                <!-- dark theme switch -->
+                <div class="header-user">                    
+                    <div class="daktheme-container">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>                        
+                        </label>
+                        <span class="iconify" data-icon="feather:moon" data-inline="false" style="font-size: 2rem;"></span>
+                    </div>                            
+                <!-- signin/up button -->
+                    <a href="signin.html"><span class="iconify" data-icon="carbon:user-avatar" data-inline="false" style="font-size: 3.2rem; padding: 0rem;"></span></a>
+                </div>
+            </div>            
         </header>
         <main>
             <!---------------- Hero Section ------------------>
             <section class="hero-section">
-                <h1>Questionnez le monde</h1>
-                <p class="slogan">grâce à nos podcasts et de nos vidéos de philosophie</p>
-                <img src="img/HeroBanner.png" alt="personne de profil écoutant un podcast dans ses écouteurs">
-                <div class="socialProof"></div>   
+                <div>
+                    <h1>Questionnez le monde</h1>
+                    <p class="slogan">grâce à nos podcasts et de nos vidéos de philosophie</p>
+                    <div class="socialProof">
+                        <div>
+                            <span class="iconify" data-icon="akar-icons:headphone" data-inline="false"></span>
+                            <p>/</p>
+                            <span class="iconify" data-icon="akar-icons:eye" data-inline="false"></span>
+                        </div>
+                        <p>note</p>
+                        <span>compteur</span>
+                        <span>note étoile</span>
+                    </div>
+                        
+                </div>                
+                <img class="hero-img" src="img/HeroBanner.png" alt="personne de profil écoutant un podcast dans ses écouteurs">                   
             </section>             
             <!---------------- Episodes Section ------------------>
             <section class="episodes-carousel">
